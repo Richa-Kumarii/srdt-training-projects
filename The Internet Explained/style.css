@@ -1,0 +1,31 @@
+body {
+    background-color: #07111F;
+    color: #F0F6FF;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    color: #00D9FF;
+}
+
+section {
+    background-color: #0D1B2A;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #00D9FF;
+}
+
+button {
+    background-color: #00D9FF;
+    color: #07111F;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
