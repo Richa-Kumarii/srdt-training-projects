@@ -153,3 +153,39 @@ body {
     font-weight: bold;
     margin-top: 8px;
 }
+/* Shop By Category Section */
+.category-section {
+    padding: 40px 30px;
+    text-align: center;
+    background-color: #fff0f3;
+}
+
+.category-section h2 {
+    font-size: 25px;
+    color: #282c3f;
+    margin-bottom: 30px;
+}
+
+.categories-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.category {
+    width: 220px;
+    padding: 35px 15px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category h3 {
+    color: #ff3f6c;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.category p {
+    color: #535766;
+    font-size: 14px;
+}
