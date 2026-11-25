@@ -1,4 +1,3 @@
-/* Basic page styling */
 * {
     margin: 0;
     padding: 0;
@@ -7,230 +6,336 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #282c3f;
+    background-color: #F5F3EE;
+    color: #172554;
 }
 
-/* Navbar styling */
+/* NAVBAR */
 .navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: 20px;
-    padding: 20px 30px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    padding: 18px 5%;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-/* Logo */
 .logo {
-    color: #ff3f6c;
-    font-size: 24px;
+    color: #0F766E;
+    font-size: 28px;
     font-weight: bold;
 }
 
-/* Navigation links */
 .categories {
     display: flex;
-    align-items: center;
-    gap: 18px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .categories a {
     text-decoration: none;
-    color: #282c3f;
-    font-size: 12px;
+    color: #172554;
     font-weight: bold;
 }
 
 .categories a:hover {
-    color: #ff3f6c;
+    color: #0F766E;
 }
 
-/* Search bar */
 .search {
-    width: 260px;
-    padding: 12px;
-    border: none;
-    border-radius: 4px;
-    background-color: #f5f5f6;
-    outline: none;
+    padding: 10px;
+    border: 1px solid #D6D3C9;
+    border-radius: 5px;
+    background-color: #F5F3EE;
 }
 
-/* Profile, wishlist and bag */
 .user-menu {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 12px;
-    white-space: nowrap;
+    font-weight: bold;
 }
 
-/* Main content */
-.main-content {
-    text-align: center;
-    padding: 70px 20px;
-}
-
-.main-content h1 {
-    margin-bottom: 15px;
-    color: #ff3f6c;
-    font-size: 30px;
-}
-
-.main-content p {
-    font-size: 16px;
-    color: #535766;
-}
-/* Fashion Sale Banner */
+/* SALE BANNER */
 .sale-banner {
+    background-color: #172554;
+    color: #FFFFFF;
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    background-color: #fff0f3;
-    margin: 30px;
-    padding: 30px;
-}
-
-.banner-text {
-    text-align: center;
+    align-items: center;
+    padding: 35px 5%;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .banner-text h1 {
-    color: #ff3f6c;
-    font-size: 32px;
-    margin-bottom: 15px;
-}
-
-.banner-text p {
-    font-size: 16px;
+    font-size: 36px;
     margin-bottom: 10px;
 }
 
-.banner-image img {
-    width: 300px;
-    height: 220px;
-    object-fit: cover;
+.banner-text p {
+    font-size: 18px;
+    color: #E5E7EB;
 }
-/* Deal of the Day Section */
-.products-section {
-    padding: 30px;
+
+.banner-image {
+    font-size: 70px;
+}
+
+.shop-button {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 25px;
+    background-color: #D6A84B;
+    color: #172554;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    padding: 35px 5%;
+}
+
+.main-content > h1 {
     text-align: center;
+    margin-bottom: 12px;
+    color: #172554;
 }
 
-.products-section h2 {
-    font-size: 25px;
-    color: #282c3f;
-    margin-bottom: 25px;
+.main-content > p {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #64748B;
 }
 
+/* COMMON SECTION */
+.products-section,
+.category-section,
+.trending-section,
+.brands-section {
+    margin-bottom: 45px;
+}
+
+.products-section h2,
+.category-section h2,
+.trending-section h2,
+.brands-section h2 {
+    text-align: center;
+    margin-bottom: 22px;
+    color: #172554;
+}
+
+/* DEAL OF THE DAY */
 .products {
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
 }
 
 .product {
-    width: 250px;
-    background-color: #ffffff;
-    padding: 15px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.product img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+    background-color: #FFFFFF;
+    padding: 22px;
+    width: 220px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(23, 37, 84, 0.08);
 }
 
 .product h3 {
-    margin-top: 12px;
-    font-size: 17px;
+    margin: 12px 0;
+    color: #172554;
 }
 
 .product p {
-    color: #ff3f6c;
+    color: #0F766E;
     font-weight: bold;
-    margin-top: 8px;
-}
-/* Shop By Category Section */
-.category-section {
-    padding: 40px 30px;
-    text-align: center;
-    background-color: #fff0f3;
 }
 
-.category-section h2 {
-    font-size: 25px;
-    color: #282c3f;
-    margin-bottom: 30px;
-}
-
+/* SHOP BY CATEGORY */
 .categories-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .category {
-    width: 220px;
-    padding: 35px 15px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #0F766E;
+    color: #FFFFFF;
+    padding: 28px 35px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    min-width: 150px;
 }
 
-.category h3 {
-    color: #ff3f6c;
-    font-size: 20px;
+/* TRENDING COLLECTIONS */
+.trending-products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.trending-card {
+    background-color: #FFFFFF;
+    padding: 25px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(23, 37, 84, 0.08);
+    font-weight: bold;
+}
+
+/* DISCOUNT BANNER */
+.discount-banner {
+    background-color: #0F766E;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 45px 20px;
+    margin: 40px 0;
+    border-radius: 10px;
+}
+
+.discount-banner h2 {
+    font-size: 30px;
     margin-bottom: 12px;
 }
 
-.category p {
-    color: #535766;
-    font-size: 14px;
+.discount-text {
+    color: #F5D78E;
+    font-size: 25px;
+    font-weight: bold;
 }
-/* Website Footer */
+
+/* TOP BRANDS */
+.brands-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.brand-card {
+    background-color: #FFFFFF;
+    padding: 25px 35px;
+    border: 1px solid #D6D3C9;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* NEWSLETTER */
+.newsletter-section {
+    background-color: #E8E5DC;
+    text-align: center;
+    padding: 35px 20px;
+    margin: 40px 0;
+    border-radius: 10px;
+}
+
+.newsletter-section h2 {
+    margin-bottom: 12px;
+}
+
+.newsletter-form {
+    margin-top: 20px;
+}
+
+.newsletter-form input {
+    padding: 12px;
+    width: 250px;
+    max-width: 100%;
+    border: 1px solid #B8B5AC;
+    border-radius: 5px;
+}
+
+.newsletter-form button {
+    padding: 12px 20px;
+    background-color: #0F766E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* FOOTER */
 .footer {
-    background-color: #282c3f;
-    color: #ffffff;
-    padding: 40px 50px 20px;
-    margin-top: 40px;
+    background-color: #172554;
+    color: #FFFFFF;
+    padding: 40px 5% 20px;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-around;
     gap: 30px;
-}
-
-.footer-column {
-    width: 30%;
+    flex-wrap: wrap;
 }
 
 .footer-column h3 {
-    color: #ff3f6c;
-    font-size: 15px;
-    margin-bottom: 20px;
+    color: #D6A84B;
+    margin-bottom: 15px;
 }
 
 .footer-column p {
-    color: #d5d6dc;
-    font-size: 13px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+    color: #E5E7EB;
 }
 
 .footer-bottom {
     text-align: center;
-    border-top: 1px solid #535766;
     margin-top: 30px;
     padding-top: 20px;
+    border-top: 1px solid #475569;
+    color: #CBD5E1;
 }
 
-.footer-bottom p {
-    color: #d5d6dc;
-    font-size: 12px;
+/* HOVER EFFECTS */
+.product,
+.category,
+.trending-card,
+.brand-card {
+    transition: transform 0.3s ease;
 }
-.footer-column p:hover {
-    color: #ff3f6c;
-    cursor: pointer;
+
+.product:hover,
+.category:hover,
+.trending-card:hover,
+.brand-card:hover {
+    transform: translateY(-5px);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .categories {
+        justify-content: center;
+    }
+
+    .sale-banner {
+        text-align: center;
+    }
+
+    .banner-text h1 {
+        font-size: 28px;
+    }
+
+    .products,
+    .categories-container,
+    .trending-products,
+    .brands-container {
+        gap: 15px;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
