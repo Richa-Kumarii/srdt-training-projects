@@ -3,29 +3,154 @@ body {
     color: #F0F6FF;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    line-height: 1.6;
 }
+
+/* Header */
 
 header {
     text-align: center;
+    padding: 30px 15px;
+    background-color: #0D1B2A;
+}
+
+header h1 {
     color: #00D9FF;
+    font-size: 32px;
+}
+
+header p {
+    color: #9AADC3;
+}
+
+/* Navigation */
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #F0F6FF;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #00D9FF;
+}
+
+/* Main Sections */
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
 }
 
 section {
     background-color: #0D1B2A;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 12px;
+    border: 1px solid #1C344B;
 }
 
 h2 {
     color: #00D9FF;
+    margin-top: 0;
 }
 
-button {
+h3 {
+    color: #00D9FF;
+}
+
+.welcome {
+    text-align: center;
+    padding: 40px 25px;
+}
+
+/* Button */
+
+.button {
+    display: inline-block;
     background-color: #00D9FF;
     color: #07111F;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    padding: 12px 22px;
+    margin-top: 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+/* Learning Steps */
+
+.step {
+    background-color: #13263A;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+/* Internet Journey */
+
+.flow {
+    background-color: #13263A;
+    color: #00D9FF;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.arrow {
+    text-align: center;
+    color: #00D9FF;
+    font-size: 24px;
+}
+
+/* Quiz */
+
+li {
+    margin: 10px 0;
+}
+
+.answer {
+    color: #00D9FF;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: #0D1B2A;
+    color: #9AADC3;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Mobile Screen */
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 18px;
+    }
 }

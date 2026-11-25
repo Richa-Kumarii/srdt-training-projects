@@ -13,11 +13,18 @@
     <header>
         <h1>The Internet Explained</h1>
         <p>How a Website Works Behind the Scenes</p>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#learn">Learn</a>
+            <a href="#journey">Internet Journey</a>
+            <a href="#quiz">Quiz</a>
+        </nav>
     </header>
 
     <main>
 
-        <section>
+        <section id="home" class="welcome">
             <h2>Welcome to the Internet Journey!</h2>
 
             <p>
@@ -30,10 +37,10 @@
                 from your browser to a web server and back.
             </p>
 
-            <button>Start the Journey</button>
+            <a href="#journey" class="button">Start the Journey</a>
         </section>
 
-        <section>
+        <section id="learn">
             <h2>What Will You Learn?</h2>
 
             <ul>
@@ -41,15 +48,66 @@
                 <li>How does a website load?</li>
                 <li>What are DNS and IP addresses?</li>
                 <li>How do browsers and servers communicate?</li>
-                <li>How can we test our knowledge?</li>
+                <li>How does information travel online?</li>
             </ul>
         </section>
 
+        <section>
+            <h2>How Does a Website Work?</h2>
+
+            <div class="step">
+                <h3>1. Browser</h3>
+                <p>You enter a website address in your browser.</p>
+            </div>
+
+            <div class="step">
+                <h3>2. DNS</h3>
+                <p>DNS finds the IP address connected to the website name.</p>
+            </div>
+
+            <div class="step">
+                <h3>3. Server</h3>
+                <p>The server receives your request and sends the website data back.</p>
+            </div>
+
+            <div class="step">
+                <h3>4. Website Loads</h3>
+                <p>Your browser displays the website on your screen.</p>
+            </div>
+        </section>
+
+        <section id="journey">
+            <h2>Your Internet Journey</h2>
+
+            <p class="flow">Your Device</p>
+            <p class="arrow">↓</p>
+
+            <p class="flow">Web Browser</p>
+            <p class="arrow">↓</p>
+
+            <p class="flow">DNS</p>
+            <p class="arrow">↓</p>
+
+            <p class="flow">Web Server</p>
+            <p class="arrow">↓</p>
+
+            <p class="flow">Website Appears on Your Screen!</p>
+        </section>
+
+        <section id="quiz">
+            <h2>Test Your Knowledge!</h2>
+
+            <p>What does DNS do?</p>
+
+            <ul>
+                <li>A. Stores website images</li>
+                <li>B. Finds the IP address of a website</li>
+                <li>C. Creates web pages</li>
+            </ul>
+
+            <p class="answer">Correct Answer: B</p>
+        </section>
+
     </main>
-
-    <footer>
-        <p>My HTML, CSS and JavaScript Project</p>
-    </footer>
-
 </body>
 </html>
